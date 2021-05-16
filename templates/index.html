@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <title>Pizza Place | Home</title>
+        <style>
+            h1{
+                font-size: 3em;
+                margin-top: .5em;
+            }
+
+            .banner{
+                max-width: 100%;
+            }
+
+            .sub-title{
+                background-color: #fff;
+                font-size: 1.5em;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside><img src="{{ url_for('static', filename='images/site-logo.png')}}" alt="pizza logo"></aside>
+            <article>
+                <img src="{{ url_for('static', filename='images/pizza-shop.jpg')}}" class="banner" alt="pizza shop">
+                <h1>Welcome to Pizza Shop</h1>
+                <p class="sub-title">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+
+</html>

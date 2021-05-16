@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <title>Pizza Place | Pizza </title>        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside><img src="{{ url_for('static', filename='images/site-logo.png')}}" alt="pizza logo"></aside>
+            <article>
+                <h1>Pizza</h1>
+                <section class="columns-desktop">
+                    <div class="pizza">
+                        <img src="{{ url_for('static', filename='images/pizza1.jpeg')}}" alt="spicy pizza">
+                        <div class="columns">
+                            <div class="title">Spicy</div>
+                            <div class="price">From 9.99€</div>
+                        </div>
+                        <p class="desc">Malagueta and pesto pizza </p>
+                        <button type="submit" data-order="spicy-pizza"><a href="/order">Order</a></button>
+                    </div>
+                    <div class="pizza">
+                        <img src="{{ url_for('static', filename='images/pizza2.jpeg')}}" alt="egg-pizza">
+                        <div class="columns">
+                            <div class="title">Egg'n'cheese</div>
+                            <div class="price">From 9.99€</div>
+                        </div>
+                        <p class="desc">Fried egg and  feta cheese pizza </p>
+                        <button data-order="egg-pizza" type="submit">Order</button>
+                    </div>
+                    <div class="pizza">
+                        <img src="{{ url_for('static', filename='images/pizza3.jpeg')}}" alt="egg-pizza">
+                        <div class="columns">
+                            <div class="title">Pepperoni</div>
+                            <div class="price">From 9.99€</div>
+                        </div>
+                        <p class="desc">The classic</p>
+                        <button data-order="safari-pizza" type="submit">Order</button>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+
+</html>

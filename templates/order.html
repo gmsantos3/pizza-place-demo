@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='order.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <title>Pizza Place | Order </title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside><img src="{{ url_for('static', filename='images/site-logo.png')}}" alt="pizza logo"></aside>
+            <section id="contact-form">
+                <form method="POST">
+                    <fieldset>
+                        <legend>
+                            <h1>Place your order</h1>
+                        </legend>
+
+                        <h3>Delivery</h3>
+                        <input name=delivery type="radio" value="Home delivery" required="required"/> Delivery<br />
+                        <input name=delivery type="radio" value="Store pickup" /> Pickup
+
+
+
+
+                        <h3>Address</h3>
+                        <input name="address1" placeholder="Address" class="large-input" required="required"/> <br />
+                        <input name="city" placeholder="City" class="small-input" required="required"/>
+                        <input name="state" placeholder="State" class="small-input" required="required"/> <br />
+                        <input name="zipcode" placeholder="Zip code" class="small-input" required="required"/>
+
+
+                        <h3>Size</h3>
+                        <select name="size">
+                            <option value="Small">Small - 9.99€</option>
+                            <option value="Medium">Medium - 14.99€</option>
+                            <option value="Large">Large - 19.99€</option>
+                        </select>
+
+                        <button type="submit">Order</button>
+                    </fieldset>
+                </form>
+
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #999;
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #014a6b;
+    padding: 10px;
+}
+
+nav a:visited,
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav>ul {
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+main {
+    display: block;
+    background-color: #f0f0f0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+
+footer {
+    padding: 15px;
+}
+
+aside,
+article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 75%;
+}
+
+article>fieldset {
+    border: 3px solid #006491;
+    border-radius: 7px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006491;
+}
+
+article>fieldset>legend {
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.columns {
+    display: flex;
+}
+
+@media only screen and (min-width:768px) {
+    main {
+        display: flex;
+    }
+    aside {
+        margin-left: 2%;
+    }
+    .columns-desktop {
+        display: flex;
+    }
+    fieldset {
+        width: 75%;
+    }
+}
+
+
+/* Pizzas page */
+
+.pizza {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: solid 2px #006491;
+}
+
+.pizza img {
+    width: 100%;
+}
+
+.pizza .title {
+    font-weight: bold;
+}
+
+.pizza .columns {
+    width: 100%;
+}
+
+.pizza .price {
+    text-align: right;
+}
+
+.pizza .columns div {
+    width: 50%;
+}
+
+.pizza button {
+    background-color: #006491;
+    padding: 5px;
+    border: solid 1px #006491;
+    border-radius: 3px;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+.pizza button:hover {
+    background-color: #028ac9;
+    color: #fff;
+}
+
+.pizza button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* order form */
+
+fieldset {
+    border: 5px solid #006491;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006491;
+}
+
+fieldset>legend {
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 20px;
+    padding: 10px;
+}
+
+fieldset>button {
+    background-color: #006491;
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 1px #006491;
+    border-radius: 3px;
+    color: #fff;
+    transition-duration: 0.4s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset>button:hover {
+    background-color: #028ac9;
+    color: #fff;
+}

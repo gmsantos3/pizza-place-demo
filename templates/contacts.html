@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <title>Pizza Place | Contacts</title>
+        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside><img src="{{ url_for('static', filename='images/site-logo.png')}}" alt="pizza logo"></aside>
+            <article>
+                <fieldset>
+                    <legend>Contact us</legend>
+                    <h3>Address</h3>
+                    <p>Pizza Place street, 12</p>
+                    <h3>Contact</h3>
+                    <p>+ 00 123 123 123</p>
+                    <h3>Open hours</h3>
+                    <p>11h - 24h</p>
+                </fieldset>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+
+</html>
